@@ -1,9 +1,9 @@
-ul * {
+#content ul * {
     padding-bottom: 5px;
     text-decoration: none;
     color: white;
 }
 
-ul {
+#content ul {
     padding-left: 20px;
 }
