@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grandma's Concert</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+        <link href="/bucketlist/q1/css/concert.css" rel="stylesheet">
+        <link href="/css/navbar.css" rel="stylesheet">
+        <script>
+            window.onload = () => {
+                var defaultHeaderWidth = "calc(100vw - var(--navbar-width) - var(--field-padding))";
+                var defaultContentWidth = "calc(100vw - var(--navbar-width) - var(--field-padding) - 20px)";
+                var scrollbarHeaderWidth = "calc(100vw - var(--navbar-width) - var(--scrollbar-width) - var(--field-padding))";
+                var scrollbarContentWidth = "calc(100vw - var(--navbar-width) - var(--scrollbar-width) - var(--field-padding) - 20px)";
+
+                setInterval(() => {
+                    var header = document.getElementById("header");
+                    var content = document.getElementById("content");
+
+                    if (window.innerWidth < window.outerWidth) {
+                        header.style.width = scrollbarHeaderWidth;
+                        content.style.width = scrollbarContentWidth;
+                    } else {
+                        header.style.width = defaultHeaderWidth;
+                        content.style.width = defaultContentWidth;
+                    }
+                }, 500);
+            }
+
+            window.onclick = function(event) {
+                if (event.target.classList.contains("btn")) {
+                    var elems = document.getElementsByClassName(event.target.classList[0]);
+                    for (let elem of elems) {
+                        if (event.target == elem) {
+                            if (elem.nextElementSibling.style.display == "block") {
+                                elem.nextElementSibling.style.display = "none";
+                            } else {
+                                elem.nextElementSibling.style.display = "block";
+                            }
+                        } else {
+                            elem.nextElementSibling.style.display = "none";
+                        }
+                    }
+                } else {
+                    var elems = document.getElementsByClassName("btn");
+                    for (let elem of elems) {
+                        elem.nextElementSibling.style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <ul class="menu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#" class="submenu-btn btn">Bucket List</a>
+                <ul class="submenu-content">
+                    <li><a href="#" class="sub-submenu-btn btn">Q1</a>
+                        <ul class="sub-submenu-content">
+                            <li><a href="../../bucketlist/q1/collegeappsdone.html">College Applications</a></li>
+                            <li><a href="../../bucketlist/q1/concert.html">Grandma's Concert</a></li>
+                            <li><a href="../../bucketlist/q1/convocation.html">Convocation</a></li>
+                            <li><a href="../../bucketlist/q1/cypatpractice.html">CyberPatriot Practice Round</a></li>
+                            <li><a href="../../bucketlist/q1/cypatteam.html">CyberPatriot Team</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="sub-submenu-btn btn">Q2</a>
+                        <ul class="sub-submenu-content">
+                            <li><a href="../../bucketlist/q2/christmas.html">Christmas</a></li>
+                            <li><a href="../../bucketlist/q2/comedysportz.html">Comedy Sports</a></li>
+                            <li><a href="../../bucketlist/q2/escaperoom.html">Escape Room</a></li>
+                            <li><a href="../../bucketlist/q2/football.html">Football Game</a></li>
+                            <li><a href="../../bucketlist/q2/homecomingparade.html">HOCO Parade</a></li>
+                            <li><a href="../../bucketlist/q2/rumblewcheese.html">Rumble w/ Cheese</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="sub-submenu-btn btn">Q3</a>
+                        <ul class="sub-submenu-content">
+                            <li><a href="../../bucketlist/q3/3dprinting.html">3D Printing</a></li>
+                            <li><a href="../../bucketlist/q3/bowling.html">Bowling</a></li>
+                            <li><a href="../../bucketlist/q3/camping.html">Camping</a></li>
+                            <li><a href="../../bucketlist/q3/dinner.html">Making Dinner</a></li>
+                            <li><a href="../../bucketlist/q3/sciencemuseum.html">Science Museum</a></li>
+                            <li><a href="../../bucketlist/q3/seniorassassin.html">Senior Assassin</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="sub-submenu-btn btn">Q4</a>
+                        <ul class="sub-submenu-content">
+                            <li><a href="../../bucketlist/q4/accepted.html">College Apps Accepted?</a></li>
+                            <li><a href="../../bucketlist/q4/dinnerwfamily.html">Dinner with Family</a></li>
+                            <li><a href="../../bucketlist/q4/dinnerwfriends.html">Dinner with Friends</a></li>
+                            <li><a href="../../bucketlist/q4/familyevent.html">Family Event</a></li>
+                            <li><a href="../../bucketlist/q4/prom.html">Prom</a></li>
+                            <li><a href="../../bucketlist/q4/seniorwalk.html">Senior Walk</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="../../service.html">Community Service</a></li>
+            <li><a href="../../awards.html">Awards</a></li>
+            <li><a href="../../projects.html">Projects</a></li>
+            <li><a href="../../work.html">Work History</a></li>
+            <li><a href="../../resume.pdf">Resume</a></li>
+
+            <li id="contact-info">
+                <p>Contact Info</p>
+                <p>(804) 401-2838</p>
+                <p>turbojax07@gmail.com</p>
+            </li>
+        </ul>
+
+        <!-- Header Div-->
+        <div id="header">
+            Bucket List #1: Grandma's Concert
+        </div>
+
+        <!-- Content Div -->
+        <div id="content">
+            <img id="img1" src="../../bucketlist/q1/img/Family_Photo.jpg" width="500">
+            <h2 style="color: white; text-align: center; font-family: Lato, sans-serif; margin: 10px;">
+                Grandma's Concert
+                <br>
+                8/26/2024
+            </h2>
+            <p style="color: white; font-family: Lato, sans-serif;">
+                In the beginning of last summer, my Grandma found out about a chorus group based out of her church known as the Treble Sounds.&ensp;They are an all-female choir that only meets during the summer.&ensp;At the end of the August, they perform with the all-male group, Summer Sounds, to showcase the songs they've learned over the past three months.&ensp;My family attended the show, and most of the songs were gospel songs, as to be expected by a church-sanctioned event.&ensp;I am sorry to admit that I did find myself beginning to nod off during the performance, but I did manage to stay awake.
+            </p>
+
+        </div>
+    </body>
+</html>

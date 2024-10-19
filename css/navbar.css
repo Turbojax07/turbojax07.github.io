@@ -1,0 +1,55 @@
+.menu, .submenu-content, .sub-submenu-content {
+    list-style-type: none;
+}
+
+.menu {
+    background-color: blue;
+    box-shadow: 0 0 10px 0 #000;
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: calc(100% - 40px);
+    color: yellow;
+    background-color: blue;
+    border-bottom: 3px solid black;
+}
+
+.submenu-content {
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 10px 0 #000;
+    width: 15vw;
+    margin-left: calc(15vw + 3px);
+    margin-top: calc(-1 * (26px + 1em));
+}
+
+.submenu-content a {
+    display: block;
+    position: relative;
+}
+
+.sub-submenu-content {
+    position: absolute;
+    display: none;
+    width: 15vw;
+    margin-top: calc(-1 * (26px + 1em));
+    margin-left: calc(15vw + 3px);
+}
+
+.sub-submenu-content a {
+    display: block;
+    box-shadow: 0 0 10px 0 #000;
+}
+
+#contact-info {
+    margin-top: 50px;
+    height: calc(140px + 7em);
+    text-align: center;
+    color: yellow;
+}

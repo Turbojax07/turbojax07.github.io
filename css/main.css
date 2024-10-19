@@ -1,0 +1,53 @@
+* {
+    font-family: "Lato", "sans-serif";
+    text-decoration: none;
+
+    margin: 0;
+    padding: 0;
+    scrollbar-width: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#navbar {
+    float: left;
+
+    width: 15vw;
+    height: 100vh;
+}
+
+#header {
+    float: right;
+
+    width: calc(85vw - 5px);
+    height: 15vh;
+
+    margin-left: 5px;
+    color: yellow;
+    text-align: center;
+    font-weight: 400;
+    font-size: 34pt;
+    background-color: blue;
+}
+
+#content {
+    float: right;
+    width: calc(85vw - 25px);
+    height: calc(85vh - 25px);
+
+    color: white;
+    background-color: black;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;
+}

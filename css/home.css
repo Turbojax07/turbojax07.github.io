@@ -1,0 +1,43 @@
+#center-img {
+    border: 5px solid black;
+    border-radius: 100%;
+
+    position: fixed;
+    left: calc(57.5vw + 5px - 25vmin);
+    top: calc(25% + 5px);
+
+    height: 50vmin;
+    width: 50vmin;
+}
+
+#content {
+    padding: 0;
+    width: calc(85vw - 5px);
+    height: calc(85vh - 5px);
+}
+
+#name {
+    position: fixed;
+    left: calc(57.5vw + 5px - 25vmin);
+    top: calc(25% + 5px);
+
+    height: 50vmin;
+    width: 50vmin;
+    padding: 5px;
+}
+
+text {
+    font-weight: 700;
+    font-size: 33pt;
+    fill: white;
+    stroke-width: 2px;
+    stroke: black;
+}
+
+img {
+    height: calc(50vh - 10px);
+    width: calc(50% - 10px);
+    margin-left: 5px;
+    margin-top: 5px;
+    display: inline-block;
+}
