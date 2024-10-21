@@ -3,6 +3,10 @@
 }
 
 #img1 {
-    border: 2px solid black;
-    width: 50%;
+    width: 40%;
+}
+
+#img2 {
+    width: 30%;
+    padding-left: 5%;
 }
