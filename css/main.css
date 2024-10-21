@@ -32,12 +32,19 @@ a:hover {
     width: calc(85vw - 5px);
     height: 15vh;
 
-    margin-left: 5px;
     color: yellow;
+    margin-left: 5px;
     text-align: center;
     font-weight: 400;
     font-size: 34pt;
     background-color: blue;
+}
+
+#header p {
+    vertical-align: middle;
+    display: table-cell;
+    height: 15vh;
+    width: calc(85vw - 5px);
 }
 
 #content {
