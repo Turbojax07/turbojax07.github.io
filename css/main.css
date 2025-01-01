@@ -19,13 +19,6 @@ a:hover {
     text-decoration: underline;
 }
 
-#navbar {
-    float: left;
-
-    width: 15vw;
-    height: 100vh;
-}
-
 #header {
     float: right;
 
