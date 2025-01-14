@@ -29,8 +29,8 @@ let links = {
             "College Applications": "/bucketlist/q1/collegeappsdone.html"
         },
         "Q2": {
-            "HOCO Parade": "/bucketlist/q2/hocoparade.html",
-            "Rumble w/ Cheese": "/bucketlist/q2/rumble.html",
+            "Rumble Preparation": "/bucketlist/q2/rumbleprep.html",
+            "Makerfest": "/bucketlist/q2/makerfest.html",
             "Comedy Sportz": "/bucketlist/q2/comedysportz.html",
             "Christmas": "/bucketlist/q2/christmas.html",
             "Family Photo": "/bucketlist/q2/photo.html"
