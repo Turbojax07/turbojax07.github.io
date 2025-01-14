@@ -3,10 +3,14 @@
 }
 
 #img1 {
-    height: 40%;
+    width: 25%;
     padding-right: 5%;
 }
 
 #img2 {
-    height: 40%;
+    width: 40%;
+}
+
+#content h2 {
+    padding-top: 2%;
 }

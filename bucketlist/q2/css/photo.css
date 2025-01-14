@@ -1,0 +1,15 @@
+#content h2 {
+    padding-top: 12.5%;
+}
+
+#content h2, #content p {
+    text-align: center;
+    display: inline-block;
+    width: 59%;
+}
+
+#img1 {
+    float: left;
+    display: inline-block;
+    width: 40%
+}
