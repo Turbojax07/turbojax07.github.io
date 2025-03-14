@@ -7,10 +7,6 @@
     scrollbar-width: 0;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 body {
     background-color: black;
 }
@@ -22,8 +18,8 @@ a:hover {
 #header {
     float: right;
 
-    width: calc(85vw - 5px);
-    height: 15vh;
+    width: calc(85vw - 25px);
+    height: 8vh;
 
     color: yellow;
     margin-left: 5px;
@@ -31,23 +27,39 @@ a:hover {
     font-weight: 400;
     font-size: 34pt;
     background-color: blue;
+
+    align-content: center;
 }
 
 #header p {
     vertical-align: middle;
     display: table-cell;
-    height: 15vh;
+    height: 1.4em;
     width: calc(85vw - 5px);
 }
 
 #content {
     float: right;
-    width: calc(85vw - 25px);
-    height: calc(85vh - 25px);
+    width: calc(85vw - 45px);
+    height: calc(92vh - 25px);
+    text-align: center;
+    overflow-y: scroll;
 
     color: white;
     background-color: black;
     margin-left: 5px;
     margin-top: 5px;
     padding: 10px;
+}
+
+#content div {
+    padding-bottom: 10px;
+}
+
+#content a:link {
+    color: #ffff00;
+}
+
+#content a:visited {
+    color: #aaaa00;
 }

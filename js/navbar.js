@@ -21,36 +21,10 @@ let navbar = document.getElementById("navbar");
 let links = {
     "Home": "/index.html",
     "Bucket List": {
-        "Q1": {
-            "Grandma's Concert": "/bucketlist/q1/concert.html",
-            "CyberPatriot Team": "/bucketlist/q1/cypatteam.html",
-            "Convocation": "/bucketlist/q1/convocation.html",
-            "CyberPatriot Practice Round": "/bucketlist/q1/cypatpractice.html",
-            "College Applications": "/bucketlist/q1/collegeappsdone.html"
-        },
-        "Q2": {
-            "Rumble Preparation": "/bucketlist/q2/rumbleprep.html",
-            "Makerfest": "/bucketlist/q2/makerfest.html",
-            "Comedy Sportz": "/bucketlist/q2/comedysportz.html",
-            "Christmas": "/bucketlist/q2/christmas.html",
-            "Family Photo": "/bucketlist/q2/photo.html"
-        },
-        "Q3": {
-            "3D Printing": "/bucketlist/q3/3dprinting.html",
-            "Bowling": "/bucketlist/q3/bowling.html",
-            "Camping": "/bucketlist/q3/camping.html",
-            "Making Dinner": "/bucketlist/q3/dinner.html",
-            "Science Museum": "/bucketlist/q3/sciencemuseum.html",
-            "Senior Assassin": "/bucketlist/q3/seniorassassin.html"
-        },
-        "Q4": {
-            "College Apps Accepted?": "/bucketlist/q4/accepted.html",
-            "Dinner with Family": "/bucketlist/q4/dinnerwfamily.html",
-            "Dinner with Friends": "/bucketlist/q4/dinnerwfriends.html",
-            "Family Event": "/bucketlist/q4/familyevent.html",
-            "Prom": "/bucketlist/q4/prom.html",
-            "Senior Walk": "/bucketlist/q4/seniorwalk.html"
-        }
+        "Q1": "/bucketlist/q1.html",
+        "Q2": "/bucketlist/q2.html",
+        "Q3": "/bucketlist/q3.html",
+        "Q4": "/bucketlist/q4.html",
     },
     "Community Service": "/service.html",
     "Awards": "/awards.html",
@@ -104,10 +78,12 @@ parseSubMenu(menu, 0, links);
 let elems = menu.querySelectorAll("a");
 elems.forEach((elem) => {
     elem.style.display = "inline-block";
-    elem.style.padding = "10px 20px";
+    elem.style.padding = "1vh 20px";
     elem.style.borderRadius = "5px";
+    elem.style.height = "4vh";
     elem.style.width = "calc(100% - 40px)";
     elem.style.color = "yellow";
+    elem.style.fontSize = "3vh";
     elem.style.backgroundColor = "blue";
     elem.style.borderBottom = "3px solid black";
     elem.style.textDecoration = "none";
@@ -130,7 +106,7 @@ for (let i = 1; i <= maxDepth; i++) {
         submenu.style.width = "15vw";
         submenu.style.listStyleType = "none";
         submenu.style.marginLeft = "calc(15vw + 3px)";
-        submenu.style.marginTop = "calc(-1 * (26px + 1em))";
+        submenu.style.marginTop = "-6.5vh";
         submenu.style.padding = "0";
         submenu.style.zIndex = "10";
 
@@ -142,17 +118,6 @@ for (let i = 1; i <= maxDepth; i++) {
         });
     });
 }
-
-let contactInfo = document.createElement("li");
-contactInfo.id = "#contact-info";
-contactInfo.style.marginTop = "50px";
-contactInfo.style.height = "calc(140px + 7em)";
-contactInfo.style.textAlign = "center";
-contactInfo.style.color = "yellow";
-
-contactInfo.innerText = "Contact Info\n(804) 401-2838\nturbojax07@gmail.com";
-
-menu.insertAdjacentElement("beforeend", contactInfo);
 
 navbar.insertAdjacentElement("beforeend", menu);
 navbar.style.float = "left";
