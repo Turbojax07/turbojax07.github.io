@@ -11,9 +11,10 @@
 }
 
 #content {
+    height: 100vh;
     padding: 0;
-    width: calc(85vw - 5px);
-    height: calc(85vh - 5px);
+    margin: 0;
+    overflow-y: hidden;
 }
 
 #name {

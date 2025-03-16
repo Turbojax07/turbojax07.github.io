@@ -44,12 +44,23 @@ a:hover {
     height: calc(92vh - 25px);
     text-align: center;
     overflow-y: scroll;
-
     color: white;
     background-color: black;
     margin-left: 5px;
     margin-top: 5px;
     padding: 10px;
+}
+
+#content ul {
+    width: min(max-content, 100%);
+    text-align: left;
+    list-style: none;
+    font-size: 1.65em;
+}
+
+#content ul li {
+    padding-bottom: 10px;
+    width: max-content;
 }
 
 #content div {
@@ -61,5 +72,5 @@ a:hover {
 }
 
 #content a:visited {
-    color: #aaaa00;
+    color: #dddd00;
 }

@@ -1,9 +1,6 @@
-#content ul * {
-    padding-bottom: 5px;
-    text-decoration: none;
-    color: white;
-}
-
-#content ul {
-    padding-left: 20px;
+#content ul li {
+    white-space: normal;
+    word-wrap: break-word;
+    width: 100%;
+    height: auto;
 }
