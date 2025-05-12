@@ -30,7 +30,6 @@
 }
 
 #event19 {
-    height: max-content;
     padding-bottom: 3em;
 }
 
@@ -42,6 +41,11 @@
 
 #event19 #pic2 {
     width: 30%;
+}
+
+#event20 {
+    text-align: center;
+    display: inline-block;
 }
 
 #event20 #pic1 {
