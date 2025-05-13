@@ -10,37 +10,37 @@
     padding-bottom: 15px;
 }
 
+#event18 {
+    padding-bottom: 3em;
+}
+
 #event18 #pic1 {
+    width: 30%;
+    float: right;
+    padding-bottom: 3em;
+}
+
+#event18 #pic2 {
+    width: 30%;
+}
+
+#event19 #pic1 {
     width: 40%;
     padding-bottom: 15px;
 }
 
-#event18 #pic2 {
+#event19 #pic2 {
     width: 22%;
     float: left;
     padding-right: 15px;
     padding-bottom: 15px;
 }
 
-#event18 #pic3 {
+#event19 #pic3 {
     float: right;
     width: 22%;
     padding-left: 15px;
     padding-bottom: 15px;
-}
-
-#event19 {
-    padding-bottom: 3em;
-}
-
-#event19 #pic1 {
-    width: 30%;
-    float: right;
-    padding-bottom: 3em;
-}
-
-#event19 #pic2 {
-    width: 30%;
 }
 
 #event20 {
