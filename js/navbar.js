@@ -30,7 +30,7 @@ let links = {
     "Awards": "/awards.html",
     "Projects": "/projects.html",
     "Work History": "/work.html",
-    "Resume": "/resume.pdf"
+    "Resume": "/resume.pdf/"
 }
 
 let maxDepth = 0;
